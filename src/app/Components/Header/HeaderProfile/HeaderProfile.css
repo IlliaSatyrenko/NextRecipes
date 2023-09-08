@@ -1,0 +1,41 @@
+.profile {
+    height: 36px;
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 575px) {
+    .profile {
+        height: 24px;
+    }
+}
+
+.profile-name {
+    line-height: 36px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 575px) {
+    .profile-name {
+        line-height: 24px;
+        font-size: 16px;    
+    }
+}
+
+.profile-image {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 575px) {
+    .profile-image {
+        font-size: 12px;
+        width: 24px;
+        height: 24px;
+    }
+}
