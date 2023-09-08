@@ -34,12 +34,9 @@ function AllItemsPage() {
     const isFilteredByArea = useRef<boolean>(false);
     const isFilteredByCategory = useRef<boolean>(false);
     const filterName = useRef<string>("");
-
+    
     useEffect(() => {
         router.push("/all-items");
-    }, []);
-
-    useEffect(() => {
         console.log(url);
         axios
             .get(url)
