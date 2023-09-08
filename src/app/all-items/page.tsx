@@ -10,7 +10,6 @@ import usePagination from "../../hooks/Pagination";
 import "./AllItemsPage.css";
 
 import { useEffect, useReducer, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
 import { Container, Pagination } from "@mui/material";
 import axios from "axios";
 
@@ -21,7 +20,6 @@ function AllItemsPage() {
     const [isLoading, setIsLoading] = useState<boolean>(true);
     let items: any = [];
 
-    const router = useRouter();
     const isFilterOpened = useRef<any>();
     const filterBackgroundVisible = useRef<any>();
     const [isFiltered, setIsFiltered] = useState<boolean>(false);
